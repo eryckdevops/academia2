@@ -1,0 +1,46 @@
+{
+  "name": "gympoint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server",
+    "queue": "nodemon src/queue.js",
+    "dev:debug": "nodemon --inspect src/server",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bee-queue": "^1.2.2",
+    "cors": "^2.8.5",
+    "date-fns": "^2.5.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.5",
+    "mongoose-paginate-v2": "^1.3.52",
+    "nodemailer": "^6.3.1",
+    "nodemailer-express-handlebars": "^3.1.0",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.19.7",
+    "sequelize-paginate": "^1.1.6",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "inquirer": "^7.0.4",
+    "nodemon": "^1.19.3",
+    "ora": "^4.0.3",
+    "prettier": "^1.18.2",
+    "sequelize-cli": "^5.5.1",
+    "sucrase": "^3.10.1"
+  }
+}
